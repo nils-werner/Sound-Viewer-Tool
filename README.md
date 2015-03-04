@@ -20,14 +20,15 @@ To install the required packages for in a current version of Ubuntu:
 ```bash
 sudo apt-get install python-dev python-numpy python-setuptools libsndfile1-dev libasound2-dev python-imaging
 ```
-Then, install the audiolab module.
+
+Then, install the audiolab module:
+```bash
+pip install scikits.audiolab
+```
 
 If you have problems installing audiolab, try version 0.8:
 ```bash
-wget http://pypi.python.org/packages/source/s/scikits.audiolab/scikits.audiolab-0.8.tar.gz
-tar -xzf scikits.audiolab-0.8.tar.gz
-cd scikits.audiolab-0.8
-sudo python setup.py install
+pip install "scikits.audiolab==0.8"
 ```
 
 Usage
@@ -51,4 +52,3 @@ Options:
 * -p PALETTE, --palette=PALETTE : Which color palette to use to draw the spectrogram, 1 for black background and 2 for white background (default 1)
 * -c CHANNEL, --channel=CHANNEL : Which channel to draw in a stereo file, 1 for left or 2 for right (default 1)
 * -v, --version         display version information
-
