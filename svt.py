@@ -27,7 +27,7 @@ svt_version = "1.1"
  
 import optparse, math, sys
 import scikits.audiolab as audiolab
-import ImageFilter, ImageChops, Image, ImageDraw, ImageColor
+from PIL import ImageFilter, ImageChops, Image, ImageDraw, ImageColor
 import numpy
  
 class TestAudioFile(object):
@@ -586,4 +586,3 @@ if __name__ == '__main__':
 	    create_png(*args)
     else:
         print "\nsvt version " + str(svt_version) + "\n"
-
